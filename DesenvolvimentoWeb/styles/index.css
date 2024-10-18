@@ -1,0 +1,302 @@
+.navbar {
+  background-color: #002776;
+  height: 3.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.navbar-logo-link img {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  padding-top: 3.5rem; /* Ajuste para compensar a altura da navbar */
+  right: -250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.sidebar span {
+  width: 230px;
+  font-weight: lighter;
+  text-align: end;
+  padding-right: 2.75rem;
+  padding-top: 0.5rem;
+  border-radius: 10px;
+  letter-spacing: 0.75px;
+}
+
+.sidebar a {
+  color: white;
+  width: 100%;
+  height: 2rem;
+  display: block;
+  text-decoration: none;
+  padding-top: 0.5rem;
+}
+
+.sidebar span:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+.sidebar-toggle {
+  background-color: #002776;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.sidebar-toggle:hover {
+  color: #006fde;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.4rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
+
+.container {
+  padding-top: 4.5rem; /* Ajuste para compensar a altura da navbar */
+}
+
+.container h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container p {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.card {
+  background-color: #f1f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card .btn {
+  text-decoration: none;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #2980b9;
+}
+
+.independence,
+.details {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 5px solid #ffd700;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.independence h2,
+.details h2 {
+  color: #002776;
+}
+
+.independence p,
+.details p {
+  color: #333;
+}
+
+.about,
+.contact,
+.celebration,
+.history,
+.gallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact form button {
+  padding: 10px;
+  background-color: #002776;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #002776;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 650px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar a {
+    font-size: 1rem;
+    width: 100%;
+    height: 2rem;
+    display: block;
+    text-decoration: none;
+    padding-top: 0.25rem;
+  }
+
+  .sidebar span {
+    width: 100%;
+  }
+
+  .sidebar span:hover {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .independence,
+  .details {
+    padding: 15px;
+    margin: 15px;
+    font-size: 0.9em;
+  }
+
+  .independence h2,
+  .details h2 {
+    font-size: 1.5em;
+  }
+
+  .independence p,
+  .details p {
+    font-size: 0.9em;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .celebration .events {
+    flex-direction: column;
+  }
+
+  .celebration .event {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
