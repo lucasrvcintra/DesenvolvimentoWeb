@@ -24,12 +24,160 @@ a {
   cursor: pointer;
 }
 
+.navbar {
+  background-color: #002776;
+  height: 3.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.navbar-logo-link img {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  padding-top: 3.5rem; /* Ajuste para compensar a altura da navbar */
+  right: -250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.sidebar span {
+  width: 230px;
+  font-weight: lighter;
+  text-align: end;
+  padding-right: 2.75rem;
+  padding-top: 0.5rem;
+  border-radius: 10px;
+  letter-spacing: 0.75px;
+}
+
+.sidebar a {
+  color: white;
+  width: 100%;
+  height: 2rem;
+  display: block;
+  text-decoration: none;
+  padding-top: 0.5rem;
+}
+
+.sidebar span:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+.sidebar-toggle {
+  background-color: #002776;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.sidebar-toggle:hover {
+  color: #006fde;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.4rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
+
 .container {
   flex: 1;
+  padding-top: 4.5rem;
+}
+
+.container h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container p {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: black;
 }
 
 .btn {
   all: unset;
 
   cursor: pointer;
+}
+
+.about,
+.contact,
+.history,
+.gallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #002776;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 650px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar a {
+    font-size: 1rem;
+    width: 100%;
+    height: 2rem;
+    display: block;
+    text-decoration: none;
+    padding-top: 0.25rem;
+  }
+
+  .sidebar span {
+    width: 100%;
+  }
+
+  .sidebar span:hover {
+    width: 100%;
+  }
 }

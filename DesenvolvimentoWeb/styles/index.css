@@ -93,23 +93,6 @@
   color: #ff0000;
 }
 
-.container {
-  padding-top: 4.5rem; /* Ajuste para compensar a altura da navbar */
-}
-
-.container h1 {
-  font-size: 3rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-.container p {
-  font-size: 1.5rem;
-  padding: 1rem;
-  text-align: center;
-  color: black;
-}
-
 .card-container {
   display: flex;
   justify-content: space-around;
@@ -180,47 +163,10 @@
   color: #333;
 }
 
-.about,
-.contact,
-.celebration,
-.history,
-.gallery {
-  padding: 50px 20px;
-  text-align: center;
-}
-
 .about img {
   max-width: 100%;
   height: auto;
   margin-top: 20px;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact form label {
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.contact form input,
-.contact form textarea {
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 100%;
-}
-
-.contact form button {
-  padding: 10px;
-  background-color: #002776;
-  color: white;
-  border: none;
-  cursor: pointer;
 }
 
 footer {
@@ -289,14 +235,5 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  .celebration .events {
-    flex-direction: column;
-  }
-
-  .celebration .event {
-    width: 100%;
-    margin-bottom: 20px;
   }
 }
