@@ -183,7 +183,7 @@ footer {
 }
 
 /* Responsividade */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .sidebar {
     width: 200px;
   }
@@ -207,10 +207,12 @@ footer {
 
   .card {
     width: 100%;
+    max-width: 500px;
   }
 
   .card-container {
     flex-direction: column;
+    align-items: center;
     margin: 20px;
   }
 

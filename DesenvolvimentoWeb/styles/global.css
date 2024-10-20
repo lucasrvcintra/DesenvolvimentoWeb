@@ -159,7 +159,7 @@ footer {
 }
 
 /* Responsividade */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .sidebar {
     width: 200px;
   }
@@ -179,5 +179,20 @@ footer {
 
   .sidebar span:hover {
     width: 100%;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  footer {
+    padding: 10px 0;
+    font-size: 0.75rem;
   }
 }
