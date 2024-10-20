@@ -1,38 +1,38 @@
-.about {
+.history {
   padding: 1.5rem;
   border-radius: 8px;
 }
 
-.about h2 {
-  color: #0033cc;
+.history h2 {
+  color: #005500;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.about p {
+.history p {
   font-size: 1.2rem;
   margin: 0.5rem 0;
   line-height: 1.6;
   color: #333333;
 }
 
-.about h3 {
-  color: #0033cc;
+.history h3 {
+  color: #005500;
   margin-top: 1.5rem;
   font-size: 1.5rem;
 }
 
-.about ul {
-  list-style-type: disc;
+.history ul {
+  list-style-type: circle;
   padding-left: 20px;
   margin: 1rem 0;
 }
 
-.about li {
+.history li {
   margin-bottom: 0.5rem;
 }
 
-.about-details {
+.history-details {
   padding: 20px;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.5);
