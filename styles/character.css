@@ -1,38 +1,38 @@
-.about {
+.character {
   padding: 1.5rem;
   border-radius: 8px;
 }
 
-.about h2 {
+.character h2 {
   color: #0033cc;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.about p {
+.character p {
   font-size: 1.2rem;
   margin: 0.5rem 0;
   line-height: 1.6;
   color: #333333;
 }
 
-.about h3 {
+.character h3 {
   color: #0033cc;
   margin-top: 1.5rem;
   font-size: 1.5rem;
 }
 
-.about ul {
+.character ul {
   list-style-type: disc;
   padding-left: 20px;
   margin: 1rem 0;
 }
 
-.about li {
+.character li {
   margin-bottom: 0.5rem;
 }
 
-.about-details {
+.character-details {
   padding: 20px;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.5);
