@@ -18,6 +18,10 @@
   width: 100%;
 }
 
+.contact form textarea {
+  resize: none;
+}
+
 .contact form button {
   padding: 10px;
   background-color: #002776;
