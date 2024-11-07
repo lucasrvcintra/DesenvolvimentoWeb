@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário DesenvolvimentoWeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formulário DesenvolvimentoWeb</h1>
+        <form action="#" class="form-container" method="POST">
+            <h2>Dados Pessoais</h2>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="sexo">Sexo</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <h2>Endereço</h2>
+            <label for="rua">Rua</label>
+            <input type="text" id="rua" name="rua" required>
+
+            <label for="numero">Número</label>
+            <input type="text" id="numero" name="numero" required>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" required>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <h2>Informações Acadêmicas</h2>
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" name="curso" required>
+
+            <label for="periodo">Período</label>
+            <input type="text" id="periodo" name="periodo" required>
+
+            <h2>Preferências</h2>
+<label>Quais são suas preferências?</label>
+<div id="preferencias" class="preferencias">
+    <label class="preferencia-item">
+        <input type="checkbox" name="preferencias" value="jogos"> Jogos
+    </label>
+    <label class="preferencia-item">
+        <input type="checkbox" name="preferencias" value="novela"> Novela
+    </label>
+    <label class="preferencia-item">
+        <input type="checkbox" name="preferencias" value="noticias"> Notícias
+    </label>
+    <label class="preferencia-item">
+        <input type="checkbox" name="preferencias" value="filmes"> Filmes
+    </label>
+    <label class="preferencia-item">
+        <input type="checkbox" name="preferencias" value="animes"> Animes
+    </label>
+    <label class="preferencia-item">
+        <input type="checkbox" name="preferencias" value="musica"> Música
+    </label>
+</div>
+
+
+            <h2>Rede Social</h2>
+            <label for="redeSocial">Qual rede social mais usada por você?</label>
+            <select id="redeSocial" name="redeSocial" multiple>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="tiktok">TikTok</option>
+                <option value="x">X/Twitter</option>
+                <option value="threads">Threads</option>
+                <option value="telegram">Telegram</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="github">GitHub</option>
+            </select>
+
+            <h2>Comentários</h2>
+            <label for="comentario">Deixe um Comentário ou sugestão</label>
+            <textarea id="comentario" name="comentario"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>

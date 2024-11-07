@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-header {
+  margin-bottom: 30px;
+}
+
+.main-title {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.main-title img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.main-title h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  font-size: clamp(1.5em, 4vw, 2em); /* Ajuste dinâmico do tamanho da fonte */
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-item.with-image img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.news-item h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.news-item p {
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 992px) {
+  .main-title h1 {
+    font-size: 1.5em; /* Fonte um pouco menor em tablets */
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title h1 {
+    font-size: 1.2em; /* Fonte menor para telas pequenas */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  .main-title h1 {
+    font-size: 1em; /* Fonte ainda menor para as menores telas */
+  }
+}
